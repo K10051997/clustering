@@ -18,6 +18,8 @@ def visualize_clusters(data, labels):
     df = pd.DataFrame(data, columns=[f'Feature{i+1}' for i in range(data.shape[1])])
     df['Cluster'] = labels
 
+    st.markdown(f"Visualizing clusters using **{df.columns[0]}** and **{df.columns[1]}**")
+
     # Only take first 2 features for visualization
     fig, ax = plt.subplots()
     sns.scatterplot(
