@@ -10,7 +10,7 @@ st.title("🧠 Unsupervised Customer Segmentation")
 # Load built-in data
 @st.cache_data
 def load_data():
-    return pd.read_csv("data/mall_customers.csv")
+    return pd.read_csv("unsupervised_clustering_app/data/mall_customers.csv")
 
 df = load_data()
 #st.subheader("📊 Raw Data")
